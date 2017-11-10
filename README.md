@@ -12,12 +12,15 @@
 │       ├── ejs
 │       ├── images
 │       └── js
+├── gulp // ← gulpパッケージ専用ディレクトリ
+│   └── tasks
 ├── README.md
 ├── .editorconfig
 ├── .csslintrc
 ├── .eslintrc
 ├── .htmlhintrc
 ├── .gitignore
+├── gulpfile.js
 ├── csscomb.json
 └── tsconfig.json
 ```
