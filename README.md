@@ -2,16 +2,24 @@
 
 #### ■開発ディレクトリ
 ```
-root
-    ├── dest // ← 出力（納品）ディレクトリ
-    │   ├── css
-    │   ├── images
-    │   └── js
-    └── resource // ← 開発ディレクトリ
-        ├── css
-        ├── ejs
-        ├── images
-        └── js
+├── root
+│   ├── dest // ← 出力（納品）ディレクトリ
+│   │   ├── css
+│   │   ├── images
+│   │   └── js
+│   └── resource // ← 開発ディレクトリ
+│       ├── css
+│       ├── ejs
+│       ├── images
+│       └── js
+├── README.md
+├── .editorconfig
+├── .csslintrc
+├── .eslintrc
+├── .htmlhintrc
+├── .gitignore
+├── csscomb.json
+└── tsconfig.json
 ```
 
 #### ■開発タスクツール
