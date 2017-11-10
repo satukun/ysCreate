@@ -73,11 +73,11 @@
 <a id="frame"></a>
 #### ■JSフレームワーク
 * React
-  - [参考URL※現在開発中](#javascript:void(0))
+  - [現在開発中](#javascript:void(0))
 * angular2
-  - [参考URL※現在開発中](#javascript:void(0))
+  - [現在開発中](#javascript:void(0))
 * vue
-  - [参考URL※現在開発中](#javascript:void(0))
+  - [現在開発中](#javascript:void(0))
 
 <a id="performance"></a>
 #### ■フロントエンドハイパフォーマンスチューニングの知識
