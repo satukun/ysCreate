@@ -17,29 +17,9 @@
 <a id="dirctory"></a>
 #### ■開発ディレクトリ
 ```
-├── root // プロジェクト名
-│   ├── dest // 出力（納品）ディレクトリ
-│   │   ├── css
-│   │   ├── images
-│   │   └── js
-│   │
-│   └── resource // 開発ディレクトリ
-│       ├── css
-│       ├── ejs
-│       ├── images
-│       └── js
-│
-├── basetemplate // [ページテンプレート](./basetemplate/)
-│   ├── dest // 出力ディレクトリ
-│   └── resource // 開発ディレクトリ
-│       ├── 1_atom
-│       ├── 2_molecule
-│       ├── 3_organism
-│       ├── 4_template
-│       └── 5_pages
-│
+├── root // プロジェクト専用ディレクトリ
+├── basetemplate // ページテンプレート専用ディレクトリ
 ├── gulp // gulpパッケージ専用ディレクトリ
-│   └── tasks
 │
 ├── README.md
 ├── .editorconfig
