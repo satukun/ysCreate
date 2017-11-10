@@ -29,7 +29,7 @@
 │       ├── images
 │       └── js
 │
-├── basetemplate // ページテンプレート
+├── basetemplate // [ページテンプレート](./basetemplate/)
 │   ├── dest // 出力ディレクトリ
 │   └── resource // 開発ディレクトリ
 │       ├── 1_atom
