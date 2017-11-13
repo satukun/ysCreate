@@ -8,6 +8,8 @@ var csso = require('gulp-csso');
 var sassLint = require("gulp-sass-lint");
 var stylelint = require('stylelint');
 var reporter = require('postcss-reporter');
+var immutableCss = require('immutable-css');
+var cssnext = require('postcss-cssnext');
 
 // --------------------------------------------------------
 var f = require('../path');
@@ -31,6 +33,9 @@ function css(device, type, project) {
         .pipe(sassLint.failOnError())
         .pipe(sass())
         .pipe(postcss([
+          immutableCss({
+            strict: true
+          }),
           stylelint('.stylelintrc'),
           reporter({ clearMessages: true }),
           require('doiuse')({

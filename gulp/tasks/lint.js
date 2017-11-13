@@ -22,27 +22,30 @@ function lints(device, type, project) {
             }))
             .pipe(htmlhint('.htmlhintrc'))
             .pipe(htmlhint.reporter());
-        } else if (type === 'css') {
-          gulp.src("app/" + project + "/**/*.+(css)")
-            .pipe(plumber({
-              errorHandler: notify.onError('CSSでError: <%= error.message %>')
-            }))
-            .pipe(csslint('.csslintrc'))
-            .pipe(csslint.formatter());
-        } else if (type === 'scss') {
-          gulp.src("app/" + project + "/**/*.+(scss)")
-            .pipe(plumber({
-              errorHandler: notify.onError('SCSSでError: <%= error.message %>')
-            }))
-            .pipe(sassLint({
-              options: {
-                'merge-default-rules': false
-              },
-              configFile: '.sass-lint.yml'
-            }))
-            .pipe(sassLint.format())
-            .pipe(sassLint.failOnError());
-        } else {
+        }
+        // else if (type === 'css') {
+        //   gulp.src("app/" + project + "/**/*.+(css)")
+        //     .pipe(plumber({
+        //       errorHandler: notify.onError('CSSでError: <%= error.message %>')
+        //     }))
+        //     .pipe(csslint('.csslintrc'))
+        //     .pipe(csslint.formatter());
+        // }
+        // else if (type === 'scss') {
+        //   gulp.src("app/" + project + "/**/*.+(scss)")
+        //     .pipe(plumber({
+        //       errorHandler: notify.onError('SCSSでError: <%= error.message %>')
+        //     }))
+        //     .pipe(sassLint({
+        //       options: {
+        //         'merge-default-rules': false
+        //       },
+        //       configFile: '.sass-lint.yml'
+        //     }))
+        //     .pipe(sassLint.format())
+        //     .pipe(sassLint.failOnError());
+        // }
+        else {
           return gulp.src("app/" + project + "/**/*.+(js)")
             .pipe(plumber({
               errorHandler: notify.onError('JSでError <%= error.message %>')
