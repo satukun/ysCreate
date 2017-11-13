@@ -43,7 +43,7 @@ function lints(device, type, project) {
             .pipe(sassLint.format())
             .pipe(sassLint.failOnError());
         } else {
-          gulp.src("app/" + project + "/**/*.+(js)")
+          return gulp.src("app/" + project + "/**/*.+(js)")
             .pipe(plumber({
               errorHandler: notify.onError('JSでError <%= error.message %>')
             }))
@@ -59,10 +59,10 @@ gulp.task('lint-html:pc', function() {
   return lints('pc', 'html', type.project);
 });
 
-gulp.task('lint-css:pc', function () {
-  return lints('pc', 'css', type.project);
-});
+// gulp.task('lint-css:pc', function () {
+//   return lints('pc', 'css', type.project);
+// });
 
-gulp.task('lint-scss:pc', function () {
-  return lints('pc', 'scss', type.project);
-});
+// gulp.task('lint-scss:pc', function () {
+//   return lints('pc', 'scss', type.project);
+// });
