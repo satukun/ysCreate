@@ -24,25 +24,25 @@
 ```
 
 #### タスク別jsファイル
-* css.js
+* **css.js**
 
 ```
 sassやpostcssなどのコンパイルなどを行ってくれます。
 ```
 
-* ejs.js
+* **ejs.js**
 
 ```
 ejsファイルのコンパイルを行ってくれます。
 ```
 
-* lint.js
+* **lint.js**
 
 ```
 html,css,jsのお作法チェックを行ってくれます。
 ```
 
-* min.js
+* **min.js**
 
 ```
 html,css,jsのコード圧縮を行ってくれます。
