@@ -2,12 +2,13 @@
 * [***現在の開発環境***](#head_dev)
   * [開発ディレクトリ](#dirctory)
   * [開発タスクツール](#tasktool)
+  * [gulpの使い方](#gulp)
 
 <a id="head_dev"></a>
 ## 現在の開発環境
 
 <a id="dirctory"></a>
-#### ■開発ディレクトリ
+### ■開発ディレクトリ
 ```
 ├── app // 開発専用ディレクトリ
 │ ├── basetemplate //ページテンプレートディレクトリ
@@ -30,8 +31,12 @@
 └── tsconfig.json
 ```
 
+---
+
+
 <a id="tasktool"></a>
-#### ■開発タスクツール
+### ■開発タスクツール
+
 `gulp`
 `ejs`
 `scss`
@@ -42,3 +47,20 @@
 ##### gulp ver
 * CLI version 3.9.1
 * Local version 3.9.1
+
+---
+
+<a id="gulp"></a>
+### ■gulpの使い方
+``ターミナル``をまずは**起動**してください。
+#### 起動方法
+``gulp``
+と入力しEnter
+
+
+<a id="gulp"></a>
+#### 納品データ作成方法
+``gulp deploy``
+と入力しEnter
+
+
