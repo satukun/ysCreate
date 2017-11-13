@@ -17,3 +17,11 @@
 
 <a id="file"></a>
 ### ■ファイル説明
+* path.js
+
+#### タスク別jsファイル
+* css.js
+aaaaa
+* ejs.js
+* lint.js
+* min.js
