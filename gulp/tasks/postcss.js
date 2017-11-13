@@ -6,6 +6,8 @@ var notify = require("gulp-notify");
 var postcss = require('gulp-postcss');
 var csso = require('gulp-csso');
 var sassLint = require("gulp-sass-lint");
+var stylelint = require('stylelint');
+var reporter = require('postcss-reporter');
 
 // --------------------------------------------------------
 var f = require('../path');
@@ -29,6 +31,8 @@ function css(device, type, project) {
         .pipe(sassLint.failOnError())
         .pipe(sass())
         .pipe(postcss([
+          stylelint('.stylelintrc'),
+          reporter({ clearMessages: true }),
           require('doiuse')({
             browsers: browsers,
             ignore: ['transforms2d']
