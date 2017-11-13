@@ -6,25 +6,20 @@ exports.devPath = function() {
       work = name;
     }
   }
+  var develop = {
+    "data": "app/" + work + "/"
+  }
+
   var type = {
-    "img":"**/*.+(png|gif|jpg|jpeg|svg|woff)",
-    "html":"**/*.html",
-    "ejs": "**/*.+(ejs)",
-    "css":"**/*.+(css|scss)",
-    "js": "**/*.+(js)"
+    "img":"app/" + work + "/**/*.+(png|gif|jpg|jpeg|svg|woff)",
+    "html":"app/" + work + "/**/*.html",
+    "ejs":"app/" + work + "/**/*.+(ejs)",
+    "css":"app/" + work + "/**/*.+(css|scss)",
+    "js":"app/" + work + "/**/*.+(js)"
   };
 
-  // if (project.object.basetemplate){
-  //   type = new start(Object.keys(project.object)[0]);
-  // }
-
-  // for (let name in project.object.app) {
-  //   if (project.object.app[name] === true) {
-  //     console.log(Object.keys(project.object.app));
-
-  //     new start(project.object.app[name]);
-  //   }
-  // }
-
-  return type;
+  return {
+    "type":type,
+    "develop": develop
+  };
 };

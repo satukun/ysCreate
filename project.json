@@ -1,13 +1,5 @@
 {
-    "object":{
-        "basetemplate": true,
-        "app": {
-            "case_one": true,
-            "case_two": true
-        }
-    },
-    "dir":{
-        "dest":"dest",
-        "resource": "resource"
-    }
+    "basetemplate": false,
+    "case_one": true,
+    "case_two": false
 }
