@@ -1,9 +1,19 @@
 # gulpパッケージ専用ディレクトリ
-#### ■ディレクトリ構成とファイル説明
+* [ディレクトリ構成](#dir)
+* [ファイル説明](#file)
+
+<a id="dir"></a>
+### ■ディレクトリ構成
 ```
 ├── config.js
 ├── path.js
 └── tasks
-    ├── lint.js
-    └── min.js
+    ├── css.js
+    ├── ejs.js
+    ├── lint.js
+    └── min.js
 ```
+---
+
+<a id="file"></a>
+### ■ファイル説明
