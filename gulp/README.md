@@ -8,7 +8,7 @@
 ├── config.js
 ├── path.js
 └── tasks
-    ├── css.js
+    ├── postcss.js
     ├── ejs.js
     ├── lint.js
     └── min.js
@@ -25,7 +25,7 @@
 #### タスク別jsファイル
 | name | description |
 |:-----------|:------------|
-| css.js       | sassやpostcssなどで記述されているスタイルなどのコンパイルを行ってくれます。 |
+| postcss.js       | postcssでコンパイルを行い、postcss専用のstylintを行ってくれます。 |
 | ejs.js       | ejsファイルのコンパイルを行ってくれます。 |
-| lint.js       | html,css,jsのお作法チェックを行ってくれます。 |
+| lint.js       | html,jsのお作法チェックを行ってくれます。 |
 | min.js       | html,css,jsのコード圧縮を行ってくれます。 |
