@@ -1,11 +1,13 @@
 var project = require('../project.json');
 
 exports.devPath = function() {
+
   for (var name in project) {
     if (project[name] === true) {
       work = name;
     }
   }
+
   var develop = {
     "data": "app/" + work + "/"
   }
@@ -22,4 +24,5 @@ exports.devPath = function() {
     "type":type,
     "develop": develop
   };
+
 };
