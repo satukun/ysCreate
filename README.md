@@ -20,7 +20,6 @@
 │
 ├── gulp // gulpパッケージ専用ディレクトリ
 │
-├── README.md
 ├── .editorconfig
 ├── .csslintrc
 ├── .eslintrc
