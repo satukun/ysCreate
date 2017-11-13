@@ -18,7 +18,6 @@ requireDir('./gulp/tasks', { recurse: true });
 // --------------------------------------------------------
 var f = require('./gulp/path');
 var type = f.devPath();
-
 // --------------------------------------------------------
 
 
@@ -27,11 +26,15 @@ gulp.task('server', () => {
     return browser.init(null, {
         port: 4000,
         server: {
-            baseDir: "./app/"
+          baseDir: "app/" + type.project + "/resource"
         },
         reloadDelay: 1000
     })
 });
+
+gulp.task('bs-reload', function () {
+  browser.reload();
+})
 
 // gulp.task("copy", function() {
 //     return gulp.src(
@@ -41,10 +44,10 @@ gulp.task('server', () => {
 // });
 
 gulp.task("watch", function() {
-      //  gulp.watch(type.ejs, ["replaceEjs:pc", 'lint-html:pc']);
-       gulp.watch(type.html, ['lint-html:pc']);
-//     gulp.watch(f.path.ejsCommon, ["replaceEjs:pc", 'lint-html:pc']);
-//     gulp.watch(f.path.scss, ["css-build:pc", 'lint-css:pc']);
+  // gulp.watch(type.ejs, ['lint-html:pc', 'bs-reload']);
+       gulp.watch(type.html, ['lint-html:pc','bs-reload']);
+       gulp.watch(type.css, ['lint-css:pc','bs-reload']);
+       gulp.watch(type.scss, ['lint-scss:pc','bs-reload']);
 //     gulp.watch(f.path.img, ['image']);
 //     gulp.watch(f.path.sprites, ['image']);
 //     gulp.watch(f.path.styleguide, ['styleguide:generate', 'styleguide:applystyles']);
