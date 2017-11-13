@@ -20,30 +20,30 @@
 * path.js
 
 ```
-aaaa
+開発ディレクトリ内のパス関連の設定。
 ```
 
 #### タスク別jsファイル
 * css.js
 
 ```
-aaaa
+sassやpostcssなどのコンパイルなどを行ってくれます。
 ```
 
 * ejs.js
 
 ```
-aaaa
+ejsファイルのコンパイルを行ってくれます。
 ```
 
 * lint.js
 
 ```
-aaaa
+html,css,jsのお作法チェックを行ってくれます。
 ```
 
 * min.js
 
 ```
-aaaa
+html,css,jsのコード圧縮を行ってくれます。
 ```
