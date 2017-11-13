@@ -42,17 +42,16 @@ function lints(device, type, project) {
             }))
             .pipe(sassLint.format())
             .pipe(sassLint.failOnError());
+        } else {
+          gulp.src("app/" + project + "/**/*.+(js)")
+            .pipe(plumber({
+              errorHandler: notify.onError('JSでError <%= error.message %>')
+            }))
+            .pipe(eslint({ useEslintrc: true }))
+            .pipe(eslint.format())
+            .pipe(eslint.failAfterError())
+            .pipe(plumber.stop());
         }
-        //  else {
-        //   return gulp.src("'" + type.js + "'")
-        //     .pipe(plumber({
-        //       errorHandler: notify.onError('JSでError出てまっせ: <%= error.message %>')
-        //     }))
-        //     .pipe(eslint({ useEslintrc: true }))
-        //     .pipe(eslint.format())
-        //     .pipe(eslint.failAfterError())
-        //     .pipe(plumber.stop());
-        // }
     }
 }
 
