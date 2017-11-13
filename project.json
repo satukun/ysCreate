@@ -1,5 +1,13 @@
 {
-    "rikujob": false,
-    "broadleaf": true,
-    "gulf": false
+    "object":{
+        "basetemplate": true,
+        "app": {
+            "case_one": true,
+            "case_two": true
+        }
+    },
+    "dir":{
+        "dest":"dest",
+        "resource": "resource"
+    }
 }

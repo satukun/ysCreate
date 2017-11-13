@@ -16,7 +16,7 @@ var revReplace = require('gulp-rev-replace');
 // --------------------------------------------------------
 var version = require('../config').version;
 var f = require('../path');
-f = f.func();
+var type = f.devPath();
 // --------------------------------------------------------
 
 // var mode = process.env.ENV_MODE || 'development';
@@ -25,8 +25,8 @@ f = f.func();
 
 function replaceEjs(device) {
     if (device === 'pc') {
-        return gulp.src(f.path.ejs)
-            .pipe(changed(f.dir.src + '/deploy/' + f.work + '/'))
+      return gulp.src(type.ejs)
+            .pipe(changed(type.ejs))
             .pipe(plumber({
                 errorHandler: notify.onError('ejsでError出てまっせ: <%= error.message %>')
             }))
@@ -34,7 +34,7 @@ function replaceEjs(device) {
                 site: JSON.parse(fs.readFileSync(f.develop.data + 'site.json'))
             }, { "ext": ".html" }))
             .pipe(prettify({ indent_char: ' ', indent_size: 2 }))
-            .pipe(gulp.dest(f.dir.src + '/deploy/' + f.work + '/'))
+            .pipe(gulp.dest(type.ejs))
             .pipe(browser.reload({
                 stream: true
             }))
@@ -50,10 +50,9 @@ function replaceFile(device) {
 }
 
 function replaceHtml(device) {
-    var manifest = gulp.src(f.dir.src + '/deploy/' + f.work + '/rev-manifest.json');
-    return gulp.src(f.dir.src + '/deploy/' + f.work + '/**/*.+(html|css|js)')
+  return gulp.src(type.html)
         .pipe(revReplace({ manifest: manifest }))
-        .pipe(gulp.dest(f.dir.dist + '/deploy/' + f.work + '/'));
+        .pipe(gulp.dest(type.html));
 }
 
 gulp.task('replaceEjs:pc', function() {
