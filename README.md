@@ -3,6 +3,7 @@
   * [開発ディレクトリ](#dirctory)
   * [開発タスクツール](#tasktool)
   * [gulpの使い方](#gulp)
+  * [各種ファイル紹介](#file)
 
 <a id="head_dev"></a>
 ## 現在の開発環境
@@ -58,10 +59,10 @@
 ``gulp``
 と入力しEnter
 
-
-<a id="gulp"></a>
 #### 納品データ作成方法
 ``gulp deploy``
 と入力しEnter
+
+<a id="file"></a>
 
 
