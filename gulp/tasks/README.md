@@ -1,6 +1,6 @@
-# lint.js プラグイン紹介
+# プラグイン紹介
 
-### プラグイン一覧
+### lint.js
 
 ```
 お作法チェック専用jsです。各種ファイルを更新すると自動的にlintが必ず走ります。
@@ -14,7 +14,7 @@ lintのルールはそれぞれのルールに従って評価しています。
 <!-- | gulp-csslint       | cssのお作法をチェックしてくれます。 |
 | gulp-sass-lint       | sassのお作法をチェックしてくれます。 | -->
 
-# postcss.js プラグイン紹介
+### postcss.js
 
 ```
 JavaScriptプラグインを用いてCSSを変換するツール「postcss」プラグイン専用jsです。
@@ -22,7 +22,6 @@ JavaScriptプラグインを用いてCSSを変換するツール「postcss」プ
 また、Sassと比べて圧倒的にコンパイル速度が速いというのも利点です。
 ```
 
-### プラグイン一覧
 | name | description |
 |:-----------|:------------|
 | PostCSS       | PostCSSはCSSを解析しツリー化してJavaScriptで処理を加えるツール |
