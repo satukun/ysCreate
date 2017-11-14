@@ -2,6 +2,7 @@
 var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var changed = require('gulp-changed');
 
 // --------------------------------------------------------
 var f = require('../path');
@@ -10,7 +11,8 @@ var type = f.devPath();
 
 function image(device, project) {
   if (device === 'pc') {
-    return gulp.src(type.dev + "/images/**/*.+(png|gif|jpg|jpeg|svg)")
+    gulp.src(type.dev + "/images/**/*.+(png|gif|jpg|jpeg|svg)")
+      .pipe(changed(type.dev + "/images"))
       .pipe(imagemin({
         progressive: true,
         svgoPlugins: [{ removeViewBox: false }],
