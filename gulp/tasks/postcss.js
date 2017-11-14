@@ -22,7 +22,7 @@ var browsers = [
 
 function css(device, type, project) {
     if (device === 'pc') {
-      gulp.src("app/" + project + "/**/*.+(scss)")
+      gulp.src(type.dev + "/**/*.+(scss)")
         .pipe(sassLint({
           options: {
             'merge-default-rules': false
