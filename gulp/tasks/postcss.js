@@ -17,7 +17,7 @@ var type = f.devPath();
 // --------------------------------------------------------
 
 var browsers = [
-  "last 2 versions", "ie >= 11", "Android >= 4", "ios_saf >= 8"
+  "last 2 versions", "ie >= 9", "Android >= 5", "ios_saf >= 8"
 ];
 
 function css(device, type, project) {
