@@ -23,13 +23,16 @@
 │
 ├── gulp // gulpパッケージ専用ディレクトリ
 │
+├── gulpfile.js
 ├── .editorconfig
 ├── .csslintrc
 ├── .eslintrc
 ├── .htmlhintrc
+├── .stylelintrc
+├── .sass-lint.yml
 ├── .gitignore
-├── gulpfile.js
 ├── csscomb.json
+├── project.json
 └── tsconfig.json
 ```
 
