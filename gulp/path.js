@@ -7,7 +7,7 @@ exports.devPath = function() {
     }
   }
   var type = {
-    "img":"app/"+work+"/**/*.+(png|gif|jpg|jpeg|svg|woff)",
+    "img":"app/"+work+"/**/*.+(png|gif|jpg|jpeg|svg)",
     "html":"app/"+work+"/**/*.html",
     "ejs": ["app/" + work + "/**/*.+(ejs)","!app / "+work+"/**/_*.+(ejs)"],
     "css":"app/"+work+"/**/*.+(css|scss)",
