@@ -63,6 +63,21 @@
 ``gulp deploy``
 と入力しEnter
 
+---
+
 <a id="file"></a>
 
+#### 各種ファイル紹介
 
+| name | description |
+|:-----------|:------------|
+| gulpfile.js       | postcssでコンパイルを行い、postcss専用のstylintを行ってくれます。 |
+| .csslintrc       | postcssでコンパイルを行い、postcss専用のstylintを行ってくれます。 |
+| .editorconfig       | ejsファイルのコンパイルを行ってくれます。 |
+| .eslintrc       | html,jsのお作法チェックを行ってくれます。 |
+| .htmlhintrc       | html,jsのお作法チェックを行ってくれます。 |
+| .stylelintrc       | ejsファイルのコンパイルを行ってくれます。 |
+| .sass-lint.yml       | html,jsのお作法チェックを行ってくれます。 |
+| csscomb.json       | html,jsのお作法チェックを行ってくれます。 |
+| project.json       | html,jsのお作法チェックを行ってくれます。 |
+| tsconfig.json       | html,jsのお作法チェックを行ってくれます。 |
