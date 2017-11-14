@@ -32,8 +32,7 @@
 ├── .sass-lint.yml
 ├── .gitignore
 ├── csscomb.json
-├── project.json
-└── tsconfig.json
+└── project.json
 ```
 
 ---
@@ -74,13 +73,12 @@
 
 | name | description |
 |:-----------|:------------|
-| gulpfile.js       | postcssでコンパイルを行い、postcss専用のstylintを行ってくれます。 |
-| .csslintrc       | postcssでコンパイルを行い、postcss専用のstylintを行ってくれます。 |
-| .editorconfig       | ejsファイルのコンパイルを行ってくれます。 |
-| .eslintrc       | html,jsのお作法チェックを行ってくれます。 |
-| .htmlhintrc       | html,jsのお作法チェックを行ってくれます。 |
-| .stylelintrc       | ejsファイルのコンパイルを行ってくれます。 |
-| .sass-lint.yml       | html,jsのお作法チェックを行ってくれます。 |
-| csscomb.json       | html,jsのお作法チェックを行ってくれます。 |
-| project.json       | html,jsのお作法チェックを行ってくれます。 |
-| tsconfig.json       | html,jsのお作法チェックを行ってくれます。 |
+| gulpfile.js       | gulpの起動ファイル |
+| .csslintrc       | cssお作法ルールの外部ファイル |
+| .editorconfig       | コードの統一ルールのフォーマット |
+| .eslintrc       | jsお作法ルールの外部ファイル |
+| .htmlhintrc       | htmlお作法ルールの外部ファイル |
+| .stylelintrc       | postcssお作法ルールの外部ファイル |
+| .sass-lint.yml       | scssお作法ルールの外部ファイル |
+| csscomb.json       | cssプロパティの並び替えルールの外部ファイル |
+| project.json       | gulpの対象ディレクトリ管理専用ファイル |
