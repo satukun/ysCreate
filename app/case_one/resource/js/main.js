@@ -1,2 +1,1 @@
-'use strict';
-var yousuke = yousuke || {};
+'use strict'

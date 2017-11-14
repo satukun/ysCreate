@@ -45,9 +45,9 @@ gulp.task('bs-reload', function () {
 
 gulp.task("watch", function() {
   // gulp.watch(type.ejs, ['lint-html:pc', 'bs-reload']);
-       gulp.watch(type.html, ['lint-html:pc','bs-reload']);
-       gulp.watch(type.scss, ['postcss:pc','bs-reload']);
-  gulp.watch(type.js, ['lint-js:pc', 'bs-reload']);
+    gulp.watch(type.html, ['lint-html:pc','bs-reload']);
+    gulp.watch(type.scss, ['postcss:pc','bs-reload']);
+    gulp.watch(type.js, ['lint-js:pc', 'bs-reload']);
 //  gulp.watch(type.scss, ['lint-scss:pc','bs-reload']);
 //     gulp.watch(f.path.img, ['image']);
 //     gulp.watch(f.path.sprites, ['image']);
