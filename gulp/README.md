@@ -8,7 +8,7 @@
 ├── config.js
 ├── path.js
 └── tasks
-    ├── css.js
+    ├── postcss.js
     ├── ejs.js
     ├── lint.js
     └── min.js
@@ -22,10 +22,19 @@
 |:-----------|:------------|
 | path.js  | 開発ディレクトリ内のパス関連の設定を行っています。 |
 
-#### タスク別jsファイル
+#### タスク別js一覧
 | name | description |
 |:-----------|:------------|
-| css.js       | sassやpostcssなどで記述されているスタイルなどのコンパイルを行ってくれます。 |
+| postcss.js       | postcssでコンパイルを行い、postcss専用のstylintを行ってくれます。 |
 | ejs.js       | ejsファイルのコンパイルを行ってくれます。 |
-| lint.js       | html,css,jsのお作法チェックを行ってくれます。 |
-| min.js       | html,css,jsのコード圧縮を行ってくれます。 |
+| lint.js       | html,jsのお作法チェックを行ってくれます。 |
+
+#### 共通ブラグイン一覧
+| name | description |
+|:-----------|:------------|
+| gulp       | postcssでコンパイルを行い、postcss専用のstylintを行ってくれます。 |
+| fs       | ejsファイルのコンパイルを行ってくれます。 |
+| path       | html,jsのお作法チェックを行ってくれます。 |
+| del       | html,jsのお作法チェックを行ってくれます。 |
+| gulp-plumber       | ejsファイルのコンパイルを行ってくれます。 |
+| gulp-notify       | html,jsのお作法チェックを行ってくれます。 |

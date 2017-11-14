@@ -1,7 +1,3 @@
 node_modules/*
-
-
-npm-debug/*
-
-
-_/*
+npm-debug*
+_*
