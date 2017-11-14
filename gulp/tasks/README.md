@@ -39,3 +39,4 @@ htmlテンプレートエンジン専用jsです。
 |:-----------|:------------|
 | gulp-ejs       | PostCSSはCSSを解析しツリー化してJavaScriptで処理を加えるツール |
 | gulp-rename     | PostCSSはCSSを解析しツリー化してJavaScriptで処理を加えるツール |
+| gulp-html-prettify | PostCSSはCSSを解析しツリー化してJavaScriptで処理を加えるツール |
