@@ -6,6 +6,7 @@ var htmlhint = require("gulp-htmlhint");
 var csslint = require("gulp-csslint");
 var sassLint = require("gulp-sass-lint");
 var notify = require("gulp-notify");
+var prettify = require("gulp-html-prettify");
 
 // --------------------------------------------------------
 var f = require('../path');
@@ -20,6 +21,7 @@ function lints(device, type, project) {
             .pipe(plumber({
               errorHandler: notify.onError('HTMLでError: <%= error.message %>')
             }))
+            .pipe(prettify({ indent_char: ' ', indent_size: 2 }))
             .pipe(htmlhint('.htmlhintrc'))
             .pipe(htmlhint.reporter());
         }
