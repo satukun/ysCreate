@@ -10,6 +10,8 @@ var stylelint = require('stylelint');
 var reporter = require('postcss-reporter');
 var immutableCss = require('immutable-css');
 var cssnext = require('postcss-cssnext');
+var changed = require('gulp-changed');
+
 
 // --------------------------------------------------------
 var f = require('../path');
@@ -22,7 +24,7 @@ var browsers = [
 
 function css(device, type, project) {
     if (device === 'pc') {
-      gulp.src(type.dev + "/**/*.+(scss)")
+      gulp.src("app/" + project + "/resource/**/*.+(scss)")
         .pipe(sassLint({
           options: {
             'merge-default-rules': false
