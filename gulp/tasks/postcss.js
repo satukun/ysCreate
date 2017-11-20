@@ -48,7 +48,7 @@ function css(device, type, project) {
           require('css-mqpacker')
         ]))
         .pipe(csso())
-        .pipe(gulp.dest("app/" + project));
+        .pipe(gulp.dest("app/" + project + "/resource"));
     }
 }
 
