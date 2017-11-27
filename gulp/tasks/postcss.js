@@ -24,7 +24,7 @@ var browsers = [
 
 function css(device, type, project) {
     if (device === 'pc') {
-      gulp.src("app/" + project + "/resource/**/*.+(scss)")
+      gulp.src("app/" + project + "/resource/scss/main.+(scss)")
         .pipe(sassLint({
           options: {
             'merge-default-rules': false
@@ -48,7 +48,7 @@ function css(device, type, project) {
           require('css-mqpacker')
         ]))
         .pipe(csso())
-        .pipe(gulp.dest("app/" + project + "/resource"));
+        .pipe(gulp.dest("app/" + project + "/resource/css"));
     }
 }
 
