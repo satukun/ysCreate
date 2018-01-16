@@ -20,7 +20,11 @@
     "browser-sync": "^2.23.5",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
     "gulp-ejs": "^3.1.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^3.3.0",
     "gulp-sequence": "^1.0.0",
     "require-dir": "^0.3.2"
   }
