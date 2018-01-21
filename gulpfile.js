@@ -12,6 +12,11 @@ var pug = require("gulp-pug");
 var notify = require("gulp-notify");
 var plumber = require("gulp-plumber");
 var changed = require('gulp-changed');
+
+
+
+
+
 // requireDir('./gulp/tasks', { recurse: true });
 
 // --------------------------------------------------------
@@ -48,7 +53,7 @@ gulp.task("pug", () => {
   var option = {
       pretty: true
   }
-  gulp.src(["app/" + work + "/resource/pug/**/*.pug", "!app/ "+work+"/resource/pug/**/_*.pug"])
+  gulp.src(type.pug)
       .pipe(changed(type.dist))
       .pipe(plumber({
           errorHandler: notify.onError("Error: <%= error.message %>")
@@ -58,7 +63,7 @@ gulp.task("pug", () => {
 });
 
 gulp.task("watch", () => {
-  gulp.watch([["app/" + work + "/resource/pug/**/*.pug", "!app/ "+work+"/resource/pug/**/_*.pug"]], ['pug','reload']);
+  gulp.watch(["app/"+work+"/resource/pug/**/*.pug"], ['pug','reload']);
   // gulp.watch(type.ejs, ['replaceEjs:pc','lint-html:pc','bs-reload']);
   // gulp.watch(type.html, ['lint-html:pc','bs-reload']);
   // gulp.watch(type.scss, ['postcss:pc','bs-reload']);
