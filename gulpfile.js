@@ -4,6 +4,7 @@ var fs = require("fs");
 var path = require('path');
 var del = require('del');
 
+
 //Webサーバー、ユーティリティ
 var browserSync = require("browser-sync");
 var requireDir = require('require-dir');
@@ -12,12 +13,11 @@ var pug = require("gulp-pug");
 var notify = require("gulp-notify");
 var plumber = require("gulp-plumber");
 var changed = require('gulp-changed');
+var rimraf = require('rimraf');
 
 
 
-
-
-// requireDir('./gulp/tasks', { recurse: true });
+requireDir('./gulp/tasks', { recurse: true });
 
 // --------------------------------------------------------
 var f = require('./gulp/path');
@@ -47,8 +47,10 @@ gulp.task('reload', () => {
 //         .pipe(gulp.dest(f.dir.dist));
 // });
 
+gulp.task('clean', function (cb) {
+  rimraf(type.dist+"**/*", cb);
+});
 
-//pugをhtmlに変換
 gulp.task("pug", () => {
   var option = {
       pretty: true
@@ -63,20 +65,19 @@ gulp.task("pug", () => {
 });
 
 gulp.task("watch", () => {
-  gulp.watch(["app/"+work+"/resource/pug/**/*.pug"], ['pug','reload']);
+  gulp.watch(type.pug, ['pug','reload']);
   // gulp.watch(type.ejs, ['replaceEjs:pc','lint-html:pc','bs-reload']);
   // gulp.watch(type.html, ['lint-html:pc','bs-reload']);
-  // gulp.watch(type.scss, ['postcss:pc','bs-reload']);
   // gulp.watch(type.js, ['lint-js:pc', 'bs-reload']);
   // gulp.watch(type.img, ['img:pc']);
-  // gulp.watch(type.css, ['lint-css:pc','bs-reload']);
-  // gulp.watch(type.scss, ['lint-scss:pc','bs-reload']);
+  gulp.watch(type.css, ['css','reload']);
 });
 
 gulp.task("default", (callback) => {
     return sequence(
+      ['clean'],
+      ['pug','css'],
       ['server'],
-      ['pug'],
       ['watch'],
         callback
     );

@@ -11,12 +11,12 @@ exports.devPath = function() {
     "html":"app/"+work+"/**/*.html",
     "pug": ["app/"+work+"/resource/pug/**/*.pug","!app/"+work+"/resource/pug/**/_*.pug"],
     "ejs": ["app/"+work+"/**/*.+(ejs)","!app/"+work+"/**/_*.+(ejs)"],
-    "css":"app/"+work+"/**/*.+(css|scss)",
+    "css": ["app/"+work+"/**/*.+(css)","!app/"+work+"/**/_*.+(css)"],
     "scss": "app/"+work+"/**/*.+(scss)",
     "js": "app/"+work+"/**/*.+(js)",
     "dev": "app/"+work+"/resource/",
     "dist": "app/"+work+"/dist/",
-    "project":work
+    "project": work
   };
   return type;
 };
