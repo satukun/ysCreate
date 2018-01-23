@@ -11,7 +11,7 @@ exports.devPath = function() {
     "html":"app/"+work+"/**/*.html",
     "pug": ["app/"+work+"/resource/pug/**/*.pug","!app/"+work+"/resource/pug/**/_*.pug"],
     "ejs": ["app/"+work+"/**/*.+(ejs)","!app/"+work+"/**/_*.+(ejs)"],
-    "css": ["app/"+work+"/**/*.+(css)","!app/"+work+"/**/_*.+(css)"],
+    "css": ["app/"+work+"/resource/css/**/*.css","!app/"+work+"/resource/css/**/_*.css"],
     "scss": "app/"+work+"/**/*.+(scss)",
     "js": "app/"+work+"/**/*.+(js)",
     "dev": "app/"+work+"/resource/",
