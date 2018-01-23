@@ -7,6 +7,7 @@ var csslint = require("gulp-csslint");
 var sassLint = require("gulp-sass-lint");
 var notify = require("gulp-notify");
 var prettify = require("gulp-html-prettify");
+var changed = require('gulp-changed');
 
 // --------------------------------------------------------
 var f = require('../path');
@@ -17,7 +18,7 @@ var type = f.devPath();
 function lints(device, type, project) {
     if (device === 'pc') {
         if (type === 'html') {
-          gulp.src(type.dev + "/**/*.+(html)")
+          gulp.src("app/" + project + "/resource/**/*.+(html)")
             .pipe(plumber({
               errorHandler: notify.onError('HTMLでError: <%= error.message %>')
             }))
@@ -26,7 +27,7 @@ function lints(device, type, project) {
             .pipe(htmlhint.reporter());
         }
         // else if (type === 'css') {
-        //   gulp.src(type.dev + "/**/*.+(css)")
+        //   gulp.src("app/" + project + "/resource/**/*.+(css)")
         //     .pipe(plumber({
         //       errorHandler: notify.onError('CSSでError: <%= error.message %>')
         //     }))
@@ -34,7 +35,7 @@ function lints(device, type, project) {
         //     .pipe(csslint.formatter());
         // }
         // else if (type === 'scss') {
-        //   gulp.src(type.dev + "/**/*.+(scss)")
+        //   gulp.src("app/" + project + "/resource/**/*.+(scss)")
         //     .pipe(plumber({
         //       errorHandler: notify.onError('SCSSでError: <%= error.message %>')
         //     }))
@@ -48,7 +49,7 @@ function lints(device, type, project) {
         //     .pipe(sassLint.failOnError());
         // }
         else if (type === 'js') {
-          return gulp.src(type.dev + "/**/*.+(js)")
+          return gulp.src("app/" + project + "/resource/**/*.+(js)")
             .pipe(plumber({
               errorHandler: notify.onError('JSでError <%= error.message %>')
             }))

@@ -1,5 +1,5 @@
 {
-    "basetemplate": false,
-    "case_one": true,
+    "basetemplate": true,
+    "case_one": false,
     "case_two": false
 }
