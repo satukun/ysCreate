@@ -1,52 +1,59 @@
 {
-  "name": "",
+  "name": "yscreate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "* [***現在の開発環境***](#head_dev)   * [開発ディレクトリ](#dirctory)   * [開発タスクツール](#tasktool)   * [gulpの使い方](#gulp)   * [各種ファイル紹介](#file)",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "globals": {
-    "L": true,
-    "$": true
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "node": true
-    }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satukun/ysCreate.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satukun/ysCreate/issues"
+  },
+  "homepage": "https://github.com/satukun/ysCreate#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
-    "browser-sync": "^2.18.13",
-    "browserify": "^14.5.0",
-    "css-mqpacker": "^6.0.1",
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.5",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
     "doiuse": "^4.0.0",
     "gulp": "^3.9.1",
-    "gulp-csslint": "^1.0.0",
-    "gulp-csso": "^3.0.0",
-    "gulp-ejs": "^3.1.0",
-    "gulp-eslint": "^4.0.0",
-    "gulp-html-prettify": "0.0.1",
-    "gulp-htmlhint": "^1.0.0",
-    "gulp-imagemin": "^3.4.0",
-    "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sass-lint": "^1.3.4",
-    "gulp-sequence": "^0.4.6",
-    "imagemin-pngquant": "^5.0.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-ejs": "^3.1.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.3",
     "immutable-css": "^1.1.2",
-    "node-notifier": "^5.1.2",
-    "postcss-cssnext": "^3.0.2",
+    "postcss-apply": "^0.8.0",
+    "postcss-calc": "^6.0.1",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.2.0",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-extend": "^1.0.5",
+    "postcss-flexbugs-fixes": "^3.3.0",
+    "postcss-import": "^11.0.0",
+    "postcss-inline-svg": "^3.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-nesting": "^4.2.1",
     "postcss-reporter": "^5.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "postcss-utilities": "^0.7.0",
+    "postcss-will-change": "^2.0.0",
     "require-dir": "^0.3.2",
-    "stylelint": "^8.2.0",
-    "stylelint-config-standard": "^17.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "rimraf": "^2.6.2",
+    "stylelint": "^8.4.0"
   }
 }

@@ -9,12 +9,14 @@ exports.devPath = function() {
   var type = {
     "img":"app/"+work+"/**/*.+(png|gif|jpg|jpeg|svg)",
     "html":"app/"+work+"/**/*.html",
-    "ejs": ["app/" + work + "/**/*.+(ejs)","!app / "+work+"/**/_*.+(ejs)"],
-    "css":"app/"+work+"/**/*.+(css|scss)",
-    "scss": "app/" + work + "/**/*.+(scss)",
+    "pug": ["app/"+work+"/resource/pug/**/*.pug","!app/"+work+"/resource/pug/**/_*.pug"],
+    "ejs": ["app/"+work+"/**/*.+(ejs)","!app/"+work+"/**/_*.+(ejs)"],
+    "css": ["app/"+work+"/**/*.+(css)","!app/"+work+"/**/_*.+(css)"],
+    "scss": "app/"+work+"/**/*.+(scss)",
     "js": "app/"+work+"/**/*.+(js)",
-    "dev": "app/" + work + "/resource/",
-    "project":work
+    "dev": "app/"+work+"/resource/",
+    "dist": "app/"+work+"/dist/",
+    "project": work
   };
   return type;
 };

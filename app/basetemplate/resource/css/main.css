@@ -1,1 +1,10 @@
-body{margin:0}div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.title{font-weight:700;color:green}.article .title{font-size:1.2em}
+body{
+  margin:0;
+}
+
+div{
+display: flex;
+div{
+  margin:0;
+}
+}
