@@ -1,11 +1,12 @@
 # 目次
 #### ■ページテンプレート専用ディレクトリ
 ```
-├── dest // 出力（納品）ディレクトリ
-└── resource // 開発ディレクトリ
-    ├── 1_atom
-    ├── 2_molecule
-    ├── 3_organism
-    ├── 4_template
-    └── 5_pages
+index.pug         ・・・ 実際にhtml化するpug
+_config.pug       ・・・ 設定ファイルのpug
+_layout.pug       ・・・ レイアウトのpug
+include/          ・・・ パーツのpugのディレクトリ
+  _inc_head.pug
+  _inc_header.pug
+  _inc_nav.pug
+  _inc_footer.pug
 ```

@@ -28,7 +28,7 @@ var type = f.devPath();
 /** Run Web server */
 gulp.task('server', () => {
     return browserSync.init(null, {
-        port: 4000,
+        port: 4003,
         server: {
           baseDir: type.dist
         },
@@ -53,7 +53,8 @@ gulp.task('clean', function (cb) {
 
 gulp.task("pug", () => {
   var option = {
-      pretty: true
+      pretty: true,
+      basedir: type.dev
   }
   gulp.src(type.pug)
       .pipe(changed(type.dist))
@@ -65,12 +66,12 @@ gulp.task("pug", () => {
 });
 
 gulp.task("watch", () => {
-  gulp.watch(type.pug, ['pug','reload']);
+  gulp.watch(type.pugAll, ['pug','reload']);
   // gulp.watch(type.ejs, ['replaceEjs:pc','lint-html:pc','bs-reload']);
   // gulp.watch(type.html, ['lint-html:pc','bs-reload']);
   // gulp.watch(type.js, ['lint-js:pc', 'bs-reload']);
   // gulp.watch(type.img, ['img:pc']);
-  gulp.watch(type.css, ['css','reload']);
+  gulp.watch(type.cssAll, ['css','reload']);
 });
 
 gulp.task("default", (callback) => {
