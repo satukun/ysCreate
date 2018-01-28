@@ -101,9 +101,11 @@
       }
     ]
   }]
-
-
 footer.forEach(function(value){
-console.log(footer);
-
+  for (key in value) {
+    console.log(key);
+    value[key].forEach(function(s,i){
+      console.log(s,i);
+    });
+  };
 });

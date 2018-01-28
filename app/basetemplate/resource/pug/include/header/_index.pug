@@ -1,5 +1,5 @@
-include ../model/_header.pug
-header.l-header
+include ./model/_index.pug
+header
   div
     span JA/
       a(href="#") EN
@@ -16,11 +16,11 @@ header.l-header
           - for (var i = 0; i < 2; i++)
             div
       ul
-        each yousukelist in yousuke
+        each headerlist in header
           li
-            a(href=yousukelist.url) #{yousukelist.text}
+            a(href=headerlist.url) #{headerlist.text}
               ul
-                if yousukelist.child
-                  each value in yousukelist.child
+                if headerlist.child
+                  each value in headerlist.child
                     li
                       a(href=value.url) #{value.text}
