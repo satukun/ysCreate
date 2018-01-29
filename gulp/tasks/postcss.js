@@ -47,16 +47,16 @@ gulp.task('css', function() {
       }),
       require('postcss-discard-comments'),
       require('postcss-calc'),
-      require('doiuse')({
-        ignore: [
-          'background-img-opts',
-          'calc',
-          'flexbox',
-          'rem',
-          'text-size-adjust',
-          'css-appearance'
-        ]
-      }),
+      // require('doiuse')({
+      //   ignore: [
+      //     'background-img-opts',
+      //     'calc',
+      //     'flexbox',
+      //     'rem',
+      //     'text-size-adjust',
+      //     'css-appearance'
+      //   ]
+      // }),
       require('cssnano')({autoprefixer:false}, {discardComments: {removeAll: true}})
     ]))
     .pipe(gulp.dest(type.dist+"/css/"));

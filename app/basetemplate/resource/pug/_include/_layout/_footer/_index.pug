@@ -1,0 +1,28 @@
+include ./_model/_index.pug
+footer#footer.l-footer
+  section.p-footer
+    canvas.p-footer__cvs(width="960",height="38")
+    div.p-footer__pankuzu
+      ul.p-footer__unit
+        li.p-footer__unitlist
+          a.p-footer__unitlist
+            span.p-footer__unitlist--active トップページ
+    nav.p-footer__nav
+      each footerlist in footer
+        each menulist in footerlist.menu
+          dl.p-footer__menu
+            dt.p-footer__menulist.p-footer__menulist--top
+              a.p-footer__menulink(href=menulist.url) #{(menulist.text)}
+            if menulist.child
+              each value,i in menulist.child
+                dd.p-footer__menulist
+                  a.p-footer__menulink(href=value.url) #{(value.text)}
+    aside.p-footer__notice
+      ul.p-footer__noticebox
+        each footerlist in footer
+          each noticelist in footerlist.notice
+            if noticelist.child
+            li.p-footer__noticeboxlist
+              a.p-footer__noticeboxlink(href=noticelist.url) #{(noticelist.text)}
+    div.p-footer__isms
+      img.p-footer__ismsicon(src="/img/isms.png", alt="isms")

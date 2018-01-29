@@ -1,0 +1,19 @@
+include ./_model/_index.pug
+header#header.l-header
+  section.p-header
+    span.p-header__lang JA/
+      a.p-header__lang--current(href="#") EN
+    h1.p-header__ttl
+      a.p-header__ttllink(href="/")
+        img.p-header__ttllog(src="/img/logo-il.png",alt="Interlink")
+    address.p-header__address 〒102-0073東京都千代田区九段北4-1-3飛栄九段北ビル7F<br>お電話:03-3234-3311
+    nav.p-header__nav
+      ul.p-header__unit
+        each headerlist in header
+          li.p-header__unitlist
+            a.p-header__unitlilnk(href=headerlist.url) #{headerlist.text}
+              ul.p-header__box
+                if headerlist.child
+                  each value in headerlist.child
+                    li.p-header__boxlist
+                      a.p-header__boxlink(href=value.url) #{value.text}
