@@ -21,9 +21,7 @@
         │   │   └── _textlink
         │   └── _project
         │       ├── _footer
-        │       │   └── _model
         │       └── _header
-        │           └── _model
         └── service
 ```
 
