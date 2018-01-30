@@ -1,0 +1,28 @@
+.p-header {
+	&__lang {
+		&--current {
+		}
+	}
+	&__ttl {
+	}
+	&__ttllink {
+	}
+	&__ttllog {
+	}
+	&__address {
+	}
+	&__nav {
+	}
+	&__unit {
+	}
+	&__unitlist {
+	}
+	&__unitlilnk {
+	}
+	&__box {
+	}
+	&__boxlist {
+	}
+	&__boxlink {
+	}
+}

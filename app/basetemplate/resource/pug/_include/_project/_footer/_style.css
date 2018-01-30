@@ -1,0 +1,34 @@
+.p-footer {
+	&__cvs {
+	}
+	&__pankuzu {
+	}
+	&__unit {
+	}
+	&__unitlist {
+		&--active {
+		}
+	}
+	&__nav {
+	}
+	&__menu {
+	}
+	&__menulist {
+		&--top {
+		}
+	}
+	&__menulink {
+	}
+	&__notice {
+	}
+	&__noticebox {
+	}
+	&__noticeboxlist {
+	}
+	&__noticeboxlink {
+	}
+	&__isms {
+	}
+	&__ismsicon {
+	}
+}
