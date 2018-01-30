@@ -1,49 +1,40 @@
-# 目次
-* [***現在の開発環境***](#head_dev)
-  * [開発ディレクトリ](#dirctory)
-  * [開発タスクツール](#tasktool)
-  * [gulpの使い方](#gulp)
-  * [各種ファイル紹介](#file)
 
-<a id="head_dev"></a>
 ## 現在の開発環境
-
-<a id="dirctory"></a>
 ### ■ディレクトリ構成
 ```
-├── app // 開発専用ディレクトリ
-│ │
-│ ├── basetemplate //ページテンプレートディレクトリ
-│ │   ├── dest //出力ディレクトリ
-│ │   └── resource //開発ディレクトリ
-│ │
-│ └── case_one //プロジェクト専用ディレクトリ
-│     ├── dest //出力ディレクトリ
-│     └── resource //開発ディレクトリ
-│
-├── gulp // gulpパッケージ専用ディレクトリ
-│
-├── gulpfile.js
-├── .editorconfig
-├── .csslintrc
-├── .eslintrc
-├── .htmlhintrc
-├── .stylelintrc
-├── .sass-lint.yml
-├── .gitignore
-├── csscomb.json
-└── project.json
+├── dist
+│   ├── css
+│   └── service
+└── resource
+    ├── css
+    │   ├── foundation
+    │   ├── layout
+    │   └── object
+    │       └── utility
+    ├── images
+    ├── js
+    └── pug
+        ├── _include
+        │   ├── _component
+        │   │   ├── _btn
+        │   │   ├── _headding
+        │   │   └── _textlink
+        │   └── _project
+        │       ├── _footer
+        │       │   └── _model
+        │       └── _header
+        │           └── _model
+        └── service
 ```
 
 ---
 
-
-<a id="tasktool"></a>
 ### ■開発タスクツール
 
 `gulp`
-`ejs`
-`scss`
+`webpack`
+`pug`
+`postcss`
 
 ##### node ver
 `v6.0.0`
@@ -54,7 +45,6 @@
 
 ---
 
-<a id="gulp"></a>
 ### ■gulpの使い方
 ``ターミナル``をまずは**起動**してください。
 #### 起動方法
@@ -66,8 +56,6 @@
 と入力しEnter
 
 ---
-
-<a id="file"></a>
 
 ### ■各種ファイル紹介
 

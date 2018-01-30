@@ -70,14 +70,15 @@ gulp.task("watch", () => {
   // gulp.watch(type.ejs, ['replaceEjs:pc','lint-html:pc','bs-reload']);
   // gulp.watch(type.html, ['lint-html:pc','bs-reload']);
   // gulp.watch(type.js, ['lint-js:pc', 'bs-reload']);
-  // gulp.watch(type.img, ['img:pc']);
+  gulp.watch(type.img, ['img', 'reload']);
   gulp.watch(type.cssAll, ['css','reload']);
 });
 
 gulp.task("default", (callback) => {
     return sequence(
       ['clean'],
-      ['pug','css'],
+      ['pug', 'css'],
+      ['img'],
       ['server'],
       ['watch'],
         callback

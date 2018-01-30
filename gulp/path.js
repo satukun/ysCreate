@@ -7,27 +7,27 @@ exports.devPath = function () {
     }
   }
   var type = {
-    "img": "app/" + work + "/**/*.+(png|gif|jpg|jpeg|svg)",
-    "html": "app/" + work + "/**/*.html",
+    "img": "app/"+work+"/resource/images/**/*.+(png|gif|jpg|jpeg|svg)",
+    "html": "app/"+work+"/**/*.html",
     "pug": [
-      "app/" + work + "/resource/pug/**/*.pug",
-      "!app/" + work + "/resource/pug/**/_*.pug"
+      "app/"+work+"/resource/pug/**/*.pug",
+      "!app/"+work+"/resource/pug/**/_*.pug"
     ],
-    "pugAll": "app/" + work + "/resource/pug/**/*.pug",
+    "pugAll": "app/"+work+"/resource/pug/**/*.pug",
     "ejs": [
-      "app/" + work + "/resource/ejs/**/*.+(ejs)",
-      "!app/" + work + "/resource/ejs/**/_*.+(ejs)"
+      "app/"+work+"/resource/ejs/**/*.+(ejs)",
+      "!app/"+work+"/resource/ejs/**/_*.+(ejs)"
     ],
-    "ejsAll": "app/" + work + "/resource/ejs/**/*.+(ejs)",
+    "ejsAll": "app/"+work+"/resource/ejs/**/*.+(ejs)",
     "css": [
-      "app/" + work + "/resource/css/**/*.css",
-      "!app/" + work + "/resource/css/**/_*.css"
+      "app/"+work+"/resource/css/**/*.css",
+      "!app/"+work+"/resource/css/**/_*.css"
     ],
-    "cssAll": "app/" + work + "/resource/**/*.css",
-    "scss": "app/" + work + "/**/*.+(scss)",
-    "js": "app/" + work + "/**/*.+(js)",
-    "dev": "app/" + work + "/resource/",
-    "dist": "app/" + work + "/dist/",
+    "cssAll": "app/"+work+"/resource/**/*.css",
+    "scss": "app/"+work+"/**/*.+(scss)",
+    "js": "app/"+work+"/**/*.+(js)",
+    "dev": "app/"+work+"/resource/",
+    "dist": "app/"+work+"/dist/",
     "project": work
   };
   return type;
