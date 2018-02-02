@@ -1,20 +1,24 @@
 include ./_model/_index.pug
-header#header.l-header
-  h1.p-header__ttl
-    a.p-header__ttllink(href="/")
-      img.p-header__ttllog(src="/img/logo-il.png",alt="Interlink")
-  section.p-header
-    span.p-header__lang JA/
-      a.p-header__lang--current(href="#") EN
-    address
-      h2.p-header__address 〒102-0073東京都千代田区九段北4-1-3飛栄九段北ビル7F<br>お電話:03-3234-3311
-    nav.p-header__nav
-      ul.p-header__unit
-        each headerlist in header
-          li.p-header__unitlist
-            a.p-header__unitlilnk(href=headerlist.url) #{headerlist.text}
-            ul.p-header__box
-                if headerlist.child
-                  each value in headerlist.child
-                    li.p-header__boxlist
-                      a.p-header__boxlink(href=value.url) #{value.text}
+// header
+header#hd.l-hd
+  div.p-hd
+    span.p-hd__lang JA/
+      a.p-hd__lang--current(href="#") EN
+    h1.p-hd__ttl
+      a.p-hd__ttl__link(href="/")
+        img.p-hd__ttl__log(src="/img/logo-il.png",alt="Interlink")
+    section.p-hd__inner
+      // address
+      address.p-hd__address
+        h2.p-hd__address__headding 〒102-0073東京都千代田区九段北4-1-3飛栄九段北ビル7F<br>お電話:03-3234-3311
+      // navi
+      nav.p-hd__nav
+        ul.p-hd__nav__unit
+          each headerlist in header
+            li.p-hd__nav__unitlist
+              a.p-hd__nav__unitlilnk(href=headerlist.url) #{headerlist.text}
+              ul.p-hd__nav__box
+                  if headerlist.child
+                    each value in headerlist.child
+                      li.p-hd__nav__boxlist
+                        a.p-hd__nav__boxlink(href=value.url) #{value.text}

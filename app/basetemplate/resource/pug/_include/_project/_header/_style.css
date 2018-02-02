@@ -1,28 +1,44 @@
-.p-header {
+.p-hd {
+  position: relative;
+	&__ttl {
+    text-align: center;
+	}
+	&__ttl__link {
+    display: inline-block;
+	}
+	&__ttl__log {
+	}
+	&__inner {
+	}
 	&__lang {
+    position: absolute;
+    right:0;
 		&--current {
 		}
 	}
-	&__ttl {
-	}
-	&__ttllink {
-	}
-	&__ttllog {
-	}
 	&__address {
+    text-align: center;
+	}
+	&__address__headding {
 	}
 	&__nav {
 	}
-	&__unit {
+	&__nav__unit {
+    display: flex;
+    justify-content: space-evenly;
 	}
-	&__unitlist {
+	&__nav__unitlist {
+    flex: 1;
 	}
-	&__unitlilnk {
+	&__nav__unitlilnk {
+    display: block;
+    text-align: center;
 	}
-	&__box {
+	&__nav__box {
+    display: none;
 	}
-	&__boxlist {
+	&__nav__boxlist {
 	}
-	&__boxlink {
+	&__nav__boxlink {
 	}
 }

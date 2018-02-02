@@ -57,8 +57,3 @@ component
 pages
 ********************************************************/
 @import '../pug/service/_style.css';
-
-
-body{
-  background-color: #000;
-}

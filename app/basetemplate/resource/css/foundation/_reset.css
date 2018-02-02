@@ -1,14 +1,43 @@
 html{
-  font-size:62.5%;
+  font-size:$font-size-base;
 }
-
 body{
-  font-size: 1.4rem;
+  font-size: $font-size-rootSP;
+  color:$color0;
+  font-family:$font-family-base;
+  line-height:$line-height-base;
+
+  @media screen and (min-width:600px) and ( max-width:959px) {
+    font-size: $font-size-rootTB;
+    line-height:$line-height-baseTB;
+  }
+
   @media screen and (min-width:960px) and ( max-width:1280px) {
-    font-size: 1rem;
+    font-size: $font-size-rootPC;
+    line-height:$line-height-basePC;
   }
 
   @media screen and (min-width:1281px) {
-    font-size: 1rem;
+    font-size: $font-size-rootPC;
+    line-height:$line-height-basePC;
   }
+}
+
+a{
+  color:$color0;
+  text-decoration:none;
+  &:hover{
+    color:$color1;
+  }
+}
+
+h1,h2,h3{
+  padding: 0;
+  margin:0;
+}
+
+ul,li,dt,dd,dl{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
 }

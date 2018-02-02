@@ -1,34 +1,44 @@
-.p-footer {
+.p-ft {
 	&__cvs {
 	}
 	&__pankuzu {
+    border-top:2px solid $color0;
+    border-bottom:2px solid $color0;
 	}
-	&__unit {
+	&__pankuzu__unit {
 	}
-	&__unitlist {
+	&__pankuzu__unitlist {
 		&--active {
 		}
 	}
 	&__nav {
+    display: flex;
+    justify-content: space-evenly;
 	}
-	&__menu {
+	&__nav__menu {
+    flex:1;
 	}
-	&__menulist {
+	&__nav__menulist {
 		&--top {
+      border-bottom: 1px dashed #000;
+      margin-bottom: 1rem;
 		}
 	}
-	&__menulink {
+	&__nav__menulink {
 	}
 	&__notice {
 	}
-	&__noticebox {
+	&__notice__box {
+    display: flex;
+    justify-content: space-evenly;
 	}
-	&__noticeboxlist {
+	&__notice__boxlist {
 	}
-	&__noticeboxlink {
+	&__notice__boxlink {
 	}
 	&__isms {
+    text-align: center;
 	}
-	&__ismsicon {
+	&__isms__icon {
 	}
 }
