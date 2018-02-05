@@ -40,7 +40,7 @@ project
 
 @import '../pug/_include/_project/_header/_style.css';
 @import '../pug/_include/_project/_footer/_style.css';
-
+@import '../pug/_include/_project/_main/_style.css';
 
 
 /*******************************************************

@@ -1,0 +1,44 @@
+.p-hd {
+  position: relative;
+	&__ttl {
+    text-align: center;
+	}
+	&__ttl__link {
+    display: inline-block;
+	}
+	&__ttl__log {
+	}
+	&__inner {
+	}
+	&__lang {
+    position: absolute;
+    right:0;
+		&--current {
+		}
+	}
+	&__address {
+    text-align: center;
+	}
+	&__address__headding {
+	}
+	&__nav {
+	}
+	&__nav__unit {
+    display: flex;
+    justify-content: space-evenly;
+	}
+	&__nav__unitlist {
+    flex: 1;
+	}
+	&__nav__unitlilnk {
+    display: block;
+    text-align: center;
+	}
+	&__nav__box {
+    display: none;
+	}
+	&__nav__boxlist {
+	}
+	&__nav__boxlink {
+	}
+}
