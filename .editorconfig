@@ -8,6 +8,6 @@ insert_final_newline = true
 end_of_line = lf
 
 
-[*.{html,scss,ejs,css,js}]
+[*.{html,scss,ejs,css,js,pug}]
 indent_size = 2
 indent_style = space
