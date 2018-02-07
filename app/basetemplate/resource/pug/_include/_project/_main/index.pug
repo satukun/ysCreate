@@ -1,4 +1,4 @@
-include ./_model/_index.pug
+include ./_model/_index
 
 // main
 block main
@@ -6,15 +6,15 @@ block main
     section.p-toppage
       h2.c-hedding 日本を元気にした実績
       span.c-headding__read インターリンクの日本を元気にした実績です。
-
-      div.c-performance
+      // 実績一覧
+      .c-performance
         each performancelist in performance
           article.c-performance__list
               a(href=performancelist.url).c-performance__link
                 h3.c-performance__text #{performancelist.text}
-    section.p-toppage
-      h2.c-hedding 日本を元気にする会社。
-
-      div.c-contact
-        div.c-contact__map
-        div.c-contact__about
+      section.p-toppage__inner
+        h2.c-hedding 日本を元気にする会社。
+        // インターリンクの住所と地図
+        .c-contact
+          .c-contact__map
+          .c-contact__about

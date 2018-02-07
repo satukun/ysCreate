@@ -1,8 +1,9 @@
-doctype html
-html(lang="en")
-  head
-    include ./_head.pug
-  body
-    include ./_project/_header/index.pug
-    include ./_project/_main/index.pug
-    include ./_project/_footer/index.pug
+block html
+  doctype html
+  html(lang="en")
+    head
+      include ./_head.pug
+    body
+      include ./_project/_header/index
+      include ./_project/_main/index
+      include ./_project/_footer/index

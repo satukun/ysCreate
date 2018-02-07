@@ -1,11 +1,11 @@
-include ./_model/_index.pug
+include ./_model/_index
 
 // footer
 block footer
   footer#ft.l-ft
-    div.p-ft
+    .p-ft
       canvas.p-ft__cvs(width="960",height="38")
-      div.p-ft__pankuzu
+      .p-ft__pankuzu
         ul.p-ft__pankuzu__unit
           li.p-ft__pankuzu__unitlist
             a.p-ft__pankuzu__unitlist
@@ -27,5 +27,5 @@ block footer
               if noticelist.child
               li.p-ft__notice__boxlist
                 a.p-ft__notice__boxlink(href=noticelist.url) #{(noticelist.text)}
-      div.p-ft__isms
+      .p-ft__isms
         img.p-ft__isms__icon(src="/img/isms.png", alt="isms")
