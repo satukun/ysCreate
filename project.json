@@ -1,5 +1,4 @@
 {
     "basetemplate": true,
-    "case_one": false,
-    "case_two": false
+    "hyuzu": true
 }
