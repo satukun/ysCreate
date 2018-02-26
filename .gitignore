@@ -1,4 +1,2 @@
 node_modules/*
 npm-debug*
-app/basetemplate/dist/**/*.html
-app/basetemplate/dist/**/*.css
