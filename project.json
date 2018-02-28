@@ -1,4 +1,5 @@
 {
-    "basetemplate": true,
-    "hyuzuru": true
+    "basetemplate": false,
+    "hyuzuru": true,
+    "rimoco": false
 }
